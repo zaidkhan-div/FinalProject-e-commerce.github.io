@@ -1,6 +1,5 @@
 import React from 'react';
 import './Checkout.css';
-import logo from './../../assets/logo.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGreaterThan } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
