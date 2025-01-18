@@ -19,7 +19,7 @@ const ProductsData = () => {
   useEffect(() => {
     async function fecthData() {
       setLoading(true)
-      const url = await fetch('http://localhost:3000/products');
+      const url = await fetch('http://localhost:24853/products');
       const json = await url.json();
       setLoading(false)
       setItems(json)
