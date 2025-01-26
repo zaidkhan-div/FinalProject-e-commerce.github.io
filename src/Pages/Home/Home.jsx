@@ -16,6 +16,10 @@ const Home = () => {
         </div>
       </div>
       <Gallery />
+      <div className="signle-image">
+        <h2>Classically Beautiful Outfits</h2>
+        <button>SHOP COLLECTION</button>
+      </div>
     </div>
   )
 }
