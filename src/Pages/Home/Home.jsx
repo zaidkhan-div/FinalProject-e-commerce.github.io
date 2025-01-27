@@ -23,7 +23,12 @@ const Home = () => {
         <button><Link to='/products'>SHOP COLLECTION</Link></button>
       </div>
       <div className="Swiper-carousal">
-        <Carousal items={items} loading={loading} dispatch={dispatch} addToCart={addToCart} productLimit={4} />
+        <div className="swiper-text">
+          <h2>Essential Collections</h2>
+          <p>Lectus mauris ultrices eros in cursus. Viverra <br />adipiscing at in tellus integer feuat scel.</p>
+        </div>
+        <Carousal />
+        <button className='swiper-btn'><Link to='/products'>VIEW ALL</Link></button>
       </div>
     </div>
   )
