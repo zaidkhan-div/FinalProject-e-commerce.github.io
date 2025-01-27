@@ -3,6 +3,8 @@ import './Home.css'
 import { Link } from 'react-router-dom'
 import Sidebar from '../../Components/Cart-Sidebar/Sidebar'
 import Gallery from '../../Components/Product-Gallery/Gallery'
+import Carousal from '../../Components/Swiper-Slider/Swiper'
+
 
 const Home = () => {
   return (
@@ -18,7 +20,10 @@ const Home = () => {
       <Gallery />
       <div className="signle-image">
         <h2>Classically Beautiful Outfits</h2>
-        <button>SHOP COLLECTION</button>
+        <button><Link to='/products'>SHOP COLLECTION</Link></button>
+      </div>
+      <div className="Swiper-carousal">
+        <Carousal items={items} loading={loading} dispatch={dispatch} addToCart={addToCart} productLimit={4} />
       </div>
     </div>
   )
