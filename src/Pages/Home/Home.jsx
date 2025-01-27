@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom'
 import Sidebar from '../../Components/Cart-Sidebar/Sidebar'
 import Gallery from '../../Components/Product-Gallery/Gallery'
 import Carousal from '../../Components/Swiper-Slider/Swiper'
-
+import TestimonialCarousel from '../../Components/Testimonial/Testimonial'
+import BlogsData from '../../Components/Blogs/BlogsData'
 
 const Home = () => {
   return (
@@ -29,6 +30,16 @@ const Home = () => {
         </div>
         <Carousal />
         <button className='swiper-btn'><Link to='/products'>VIEW ALL</Link></button>
+      </div>
+      <div className="testimonial">
+        <TestimonialCarousel />
+      </div>
+      <div className="blogs">
+        <div className="blogs-content">
+          <h2>Latest News & Blog</h2>
+          <p>Mollis aliquam ut porttitor leo a diam. Imperdiet sed <br /> euismod nisi porta lorem mollis.</p>
+        </div>
+        <BlogsData />
       </div>
     </div>
   )
