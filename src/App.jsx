@@ -13,6 +13,9 @@ import Resgister from './Components/Register/Resgister'
 import Login from './Components/Login/Login'
 import Protected from './Components/Protected-Routes/Protected'
 import ErrorPage from './Pages/ErrorPage.jsx/Error'
+import BlogsData from './Components/Blogs/BlogsData'
+import BlogDetail from './Components/Blogs/BlogDetail'
+
 // Context
 import { ProductsProvider } from './Components/Context/ProductsContext'
 
@@ -34,6 +37,8 @@ const App = () => {
           <Route path='cart' element={<Cart />} />
           <Route path='register' element={<Resgister />} />
           <Route path='*' element={<ErrorPage />} />
+          {/* <Route path='/blog' element={<BlogsData />} /> */}
+          <Route path='/blog/:id' element={<BlogDetail />} />
         </Routes>
       </ProductsProvider>
       <Footer />

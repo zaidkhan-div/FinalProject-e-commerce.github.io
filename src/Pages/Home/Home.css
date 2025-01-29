@@ -152,7 +152,7 @@
     width: 95%;
     margin: auto;
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .blogs-content {
@@ -169,4 +169,41 @@
 
 .blogs-content p {
     color: rgba(0, 0, 0, 0.6);
+}
+
+/* Home icon Box */
+.home-icons {
+    border-top: 1px solid rgba(0, 0, 0, 0.508);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.508);
+    height: 130px;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons-box {
+    width: 20%;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.icon-image {
+    /* width: 0px; */
+}
+
+.icon-image img {
+    width: 100%;
+}
+
+.icon-desc p {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.icon-desc span {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
 }
