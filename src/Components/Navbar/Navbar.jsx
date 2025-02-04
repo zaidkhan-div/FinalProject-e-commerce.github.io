@@ -61,7 +61,7 @@ const Navbar = () => {
               <Link to="/about" onClick={() => setMenu('About')} className={menu === 'About' ? 'active' : ''}>About Us</Link>
 
               <Link to="/products" onClick={() => setMenu('Products')} className={menu === 'Products' ? 'active' : ''}>Products</Link>
-
+              <Link to='/blogs' onClick={() => setMenu('Blogs')} className={menu === 'Blogs' ? 'active' : ''}>Blogs</Link>
               <Link to="/contact" onClick={() => setMenu('Contact')} className={menu === 'Contact' ? 'active' : ''}>Contact Us</Link>
             </ul>
           </div>
@@ -69,7 +69,7 @@ const Navbar = () => {
           <div className="icon-section">
             <div>
               <Link to='/cart'>
-              <FontAwesomeIcon icon={faCartShopping} />
+                <FontAwesomeIcon icon={faCartShopping} />
               </Link>
             </div>
             <div>
@@ -77,7 +77,7 @@ const Navbar = () => {
             </div>
             <div>
               <Link to='/login'>
-              <FontAwesomeIcon icon={faUser} />
+                <FontAwesomeIcon icon={faUser} />
               </Link>
             </div>
 
