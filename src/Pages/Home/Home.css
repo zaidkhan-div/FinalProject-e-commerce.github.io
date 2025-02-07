@@ -171,6 +171,8 @@
     color: rgba(0, 0, 0, 0.6);
 }
 
+.blogs button {}
+
 /* Home icon Box */
 .home-icons {
     border-top: 1px solid rgba(0, 0, 0, 0.25);

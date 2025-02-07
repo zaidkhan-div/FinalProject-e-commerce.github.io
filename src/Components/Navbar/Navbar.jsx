@@ -30,25 +30,62 @@
 
 // export default Navbar
 
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './Navbar.css'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faCartShopping, faHeart } from '@fortawesome/free-solid-svg-icons';
 import Logo from '../../assets/Logo.svg'
 import Top from './Top';
+import { useSelector } from 'react-redux';
 
 
 const Navbar = () => {
 
-
   const [menu, setMenu] = useState('Home')
+  const { totalQuantity } = useSelector((state) => state.allCart)
+  // let totalQuantity = JSON.parse(localStorage.getItem('totalQuantity')) || 0;
+  const [showNavbar, setShowNavbar] = useState(true); // State to control navbar visibility
+  const [scrollingRight, setScrollingRight] = useState(false); // State to track horizontal scrolling
+
+  let lastScrollY = window.scrollY;
+  let lastScrollX = window.scrollX;
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > lastScrollY) {
+        // Scrolling down
+        setShowNavbar(false);
+      } else {
+        // Scrolling up
+        setShowNavbar(true);
+      }
+
+      if (window.scrollX > lastScrollX) {
+        // Scrolling right
+        setScrollingRight(true);
+      } else {
+        // Scrolling left or no horizontal scroll
+        setScrollingRight(false);
+      }
+
+      lastScrollY = window.scrollY;
+      lastScrollX = window.scrollX;
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <>
       <Top />
       <div className="container">
-        <div className='main-navbar'>
+        {/* <div className='main-navbar'> */}
+          <div className={`main-navbar ${showNavbar ? 'visible' : 'hidden'} ${scrollingRight ? 'scrolled-right' : ''}`}>
 
           <div className="logo">
             <Link to='/'><img src={Logo} alt="" /></Link>
@@ -69,6 +106,7 @@ const Navbar = () => {
           <div className="icon-section">
             <div>
               <Link to='/cart'>
+                <div className="cart-dot">{totalQuantity}</div>
                 <FontAwesomeIcon icon={faCartShopping} />
               </Link>
             </div>
