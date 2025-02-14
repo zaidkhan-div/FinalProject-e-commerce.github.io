@@ -1,13 +1,14 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import './Faqs.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronRight, faGreaterThan, faL } from "@fortawesome/free-solid-svg-icons";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 const FaqsCompo = ({ question, answer }) => {
     const [show, setShow] = useState(false);
 
     return (
         <>
+
             <div className="faqs-container">
                 <div className="faqs">
                     <div className="faqs-head" onClick={() => setShow(!show)}>
