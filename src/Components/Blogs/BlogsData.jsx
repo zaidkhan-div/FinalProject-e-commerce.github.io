@@ -13,6 +13,17 @@ const BlogsData = () => {
                 spaceBetween={10}
                 slidesPerView={3}
                 loop={true}
+                breakpoints={{
+                    320: {
+                        slidesPerView: 1,
+                    },
+                    620: {
+                        slidesPerView: 2,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                    }
+                }}
             // autoplay={{ delay: 2000 }}
             >
                 {/* blogs.slice(0,3).map */}

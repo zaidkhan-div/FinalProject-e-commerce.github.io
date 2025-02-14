@@ -21,6 +21,12 @@ function Carousal() {
             slidesPerView={3}
             loop={true}  // Continuous loop
             breakpoints={{
+                220: {
+                    slidesPerView: 1,
+                },
+                300: {
+                    slidesPerView: 1,
+                },
                 320: {
                     slidesPerView: 1, // 1 slide for small screens
                 },

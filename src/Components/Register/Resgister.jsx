@@ -6,6 +6,7 @@ import { faGreaterThan } from "@fortawesome/free-solid-svg-icons";
 
 
 const RegisterForm = () => {
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -31,6 +32,7 @@ const RegisterForm = () => {
       if (response.ok) {
         alert('Registration Successful!');
         setFormData({ name: "", email: "", password: "" }); // Reset the form
+        window.location.href = '/'
       } else {
         const errorData = await response.json();
         alert(errorData.message || 'Registration failed');
