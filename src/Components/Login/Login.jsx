@@ -32,7 +32,7 @@ const Login = () => {
 
       if (response.ok) {
         localStorage.setItem('token', data.token); // Save token in localStorage
-        alert('Login Successful!');
+        // alert('Login Successful!');
         window.location.href = '/'
       } else {
         alert(data.message || 'Invalid credentials');

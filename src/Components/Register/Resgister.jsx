@@ -29,7 +29,10 @@ const RegisterForm = () => {
         body: JSON.stringify(formData),
       });
 
+      const data = await response.json();
+
       if (response.ok) {
+        localStorage.setItem('token', data.token); // Save token in localStorage
         alert('Registration Successful!');
         setFormData({ name: "", email: "", password: "" }); // Reset the form
         window.location.href = '/'

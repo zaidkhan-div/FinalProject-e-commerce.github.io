@@ -15,6 +15,7 @@ import Icon4 from '../../assets/Icon-Box-04.png'
 
 
 const Home = () => {
+  localStorage.setItem('token','')
   return (
     <div>
       {/* <Sidebar /> */}

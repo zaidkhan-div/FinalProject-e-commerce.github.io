@@ -7,7 +7,7 @@ function TestimonialCarousel() {
     const testimonials = [
         {
             quote:
-                "Wulla tincidunt convallis bibendum. Donec nec posuere nunc, sed rutrum massa. Maecenas nisi mauris, elementum consequat iaculis ac, aliquam in Sed estas, massa a stibulum augue, atculis arcu felis id ex.",
+                "Wulla tincidunt convallis bibendum. Donec nec posuere nunc, sed rutrum massa. Maecenas nisi mauris, elementum consequat iaculis ac,",
             author: "Melisia",
             role: "Singer",
         },
