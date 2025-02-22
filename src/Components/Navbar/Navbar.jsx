@@ -38,6 +38,7 @@ import { faUser, faCartShopping, faHeart } from '@fortawesome/free-solid-svg-ico
 import Logo from '../../assets/Logo.svg'
 import Top from './Top';
 import { useSelector } from 'react-redux';
+import MobileNavbar from '../Mobile-Navbar/MobileNavbar';
 
 
 const Navbar = () => {
@@ -51,6 +52,7 @@ const Navbar = () => {
   return (
     <>
       <Top />
+      <MobileNavbar className/>
       <div className="container">
         <div className='main-navbar'>
           <div className="logo">

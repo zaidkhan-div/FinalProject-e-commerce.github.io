@@ -215,6 +215,12 @@
     color: rgba(0, 0, 0, 0.5);
 }
 
+@media screen and (max-width: 680px) {
+    .home-icons {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 480px) {
     .hero-content h1 {
         font-size: 2rem;

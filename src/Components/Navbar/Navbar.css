@@ -198,3 +198,9 @@
 .icon-section a:hover {
     color: black;
 }
+
+@media screen and (max-width:750px) {
+    .main-navbar{
+        display: none;
+    }
+}

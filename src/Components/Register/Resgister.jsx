@@ -12,6 +12,7 @@ const RegisterForm = () => {
     email: "",
     password: "",
   })
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   const handleChange = async (e) => {
     const { name, value } = e.target;
@@ -43,6 +44,11 @@ const RegisterForm = () => {
     } catch (error) {
       console.error('Error:', error);
       alert('An error occurred');
+    }
+    
+    if (!emailRegex.test(formData.email)) {
+      alert('Please Enter Valid Email');
+      return;
     }
   };
 
