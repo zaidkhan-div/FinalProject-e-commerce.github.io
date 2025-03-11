@@ -36,7 +36,7 @@ const Cart = () => {
       {/* disabled={data.quantity === 1} */}
 
       {/* Cart-Items Ui */}
-      
+
       <div className="cart-items-section">
         <div className="cart-products-section">
           <div className="cart-product-titles">

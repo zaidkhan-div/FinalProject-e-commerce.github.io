@@ -31,7 +31,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 1300px;
+    width: 90%;
     margin: 50px auto;
 }
 
@@ -124,4 +124,29 @@ form {}
     display: flex;
     justify-content: space-between;
     padding: 0.2rem 1rem;
+}
+
+@media screen and (max-width:750px) {
+    .checkout-details {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        margin: 50px auto;
+        flex-direction: column;
+    }
+
+    .input-fields {
+        flex-direction: column;
+        width: 270px;
+    }
+
+    .input-fields input {
+        width: 100%;
+    }
+
+    .form-btn button {
+        width: 100%;
+    }
+
+
 }

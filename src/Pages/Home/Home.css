@@ -216,6 +216,9 @@
 }
 
 @media screen and (max-width: 680px) {
+    .hero-section{
+        background-image: url(../../assets/prod-3.jpg);
+    }
     .home-icons {
         display: none;
     }

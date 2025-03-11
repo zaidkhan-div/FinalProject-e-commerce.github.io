@@ -327,6 +327,31 @@
 }
 
 /* Responsive design (optional) */
-@media (max-width: 768px) {
-  /* Adjust styles for smaller screens */
+@media screen and (max-width:800px) {
+
+  .cart-items-section {
+    flex-direction: column;
+    justify-content: center;
+    overflow-x: auto;
+    width: 820px;
+  }
+
+  .cart-product-prices {
+    gap: 3rem;
+  }
+
+  .cart-product-titles {
+    /* width: 100%; */
+  }
+
+  .cart-products-section {
+    overflow-x: auto;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+  }
+
+  .order-summary-section {
+    height: 40vh;
+    width: 40%;
+  }
 }
