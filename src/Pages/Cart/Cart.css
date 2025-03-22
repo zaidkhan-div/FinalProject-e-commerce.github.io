@@ -30,7 +30,7 @@
 
 
 .cart-items-section {
-  width: 1300px;
+  width: 90%;
   margin: auto;
   /* border: 1px solid black; */
   /* height: 60vh; */
@@ -333,17 +333,17 @@
     flex-direction: column;
     justify-content: center;
     overflow-x: auto;
-    width: 820px;
-  }
-
-  .cart-product-prices {
-    gap: 3rem;
+    width: 100%;
+    /* border: 1px solid black; */
+    padding: 1rem 1rem;
   }
 
   .cart-product-titles {
-    /* width: 100%; */
+    background-color: transparent;
   }
-
+  .cart-product-prices{
+    margin-left: 15px;
+  }
   .cart-products-section {
     overflow-x: auto;
     display: inline-block;
@@ -352,6 +352,6 @@
 
   .order-summary-section {
     height: 40vh;
-    width: 40%;
+    width: 90%;
   }
 }

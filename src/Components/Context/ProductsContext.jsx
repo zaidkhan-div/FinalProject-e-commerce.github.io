@@ -22,7 +22,7 @@ export const ProductsProvider = ({ children }) => {
             }
         }
         fetchData();
-        console.log('This is global Context');
+        // console.log('This is global Context');
     }, []);
     // console.log(products);
     
