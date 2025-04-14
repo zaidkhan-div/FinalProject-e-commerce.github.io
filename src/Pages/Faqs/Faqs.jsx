@@ -13,7 +13,7 @@ const Faqs = () => {
     return (
         <>
             <div className="cart-hero">
-                <h1>Contact Us</h1>
+                <h1>FaQ's</h1>
                 <div className="cart-breadcrumbs">
                     <div className="cart-crumbs-text">
                         <Link to='/'><p>Home</p></Link>
